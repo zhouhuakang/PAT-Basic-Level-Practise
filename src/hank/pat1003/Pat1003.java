@@ -1,5 +1,8 @@
 package hank.pat1003;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 //@formatter:off
 /**
  * Expand to see more information 1003. 我要通过！(20)
@@ -59,5 +62,28 @@ public class Pat1003 {
 		}
 
 	}
+	// 8
+	// PAT
+	// PAAT
+	// AAPATAA
+	// AAPAATAAAA
+	// xPATx
+	// PT
+	// Whatever
+	// APAAATAA
+//	public static void main(String[] args) {
+//		Scanner scanner = new Scanner(System.in);
+//		Pat1003 pat1003 = new Pat1003();
+//		int numberOfTestStrings = Integer.parseInt(scanner.nextLine());
+//		ArrayList<String> stringList = new ArrayList<String>();
+//		for (int i = 0; i < numberOfTestStrings; i++) {
+//			stringList.add(scanner.nextLine());
+//		}
+//		for (String x : stringList) {
+//			pat1003.judge(x);
+//			System.out.print("\n");
+//		}
+//
+//	}
 
 }
