@@ -33,21 +33,23 @@ import java.util.Scanner;
 public class EachDigitSum {
 
 	public void printSpell(int eachDigitSum) {
-		String[] result = new String[10];
+		
+		int sumLength = String.valueOf(eachDigitSum).length();
+		String[] result = new String[sumLength];
 
 		String[] Spell = new String[] { "ling", "yi", "er", "san", "si", "wu",
 				"liu", "qi", "ba", "jiu" };
-		int digitLength = 0;
+		int position = 0;
 		while (eachDigitSum >= 10) {
-			result[digitLength] = (Spell[eachDigitSum % 10]);
+			result[position] = (Spell[eachDigitSum % 10]);
 			eachDigitSum /= 10;
-			digitLength++;
+			position++;
 		}
 		if (eachDigitSum < 10) {
-			result[digitLength] = Spell[eachDigitSum];
+			result[position] = Spell[eachDigitSum];
 		}
 
-		for (int i = digitLength; i > 0; i--) {
+		for (int i = position; i > 0; i--) {
 			System.out.print(result[i] + " ");
 		}
 		System.out.print(result[0]);
